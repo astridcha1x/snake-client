@@ -15,6 +15,9 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Successfully connected to the Game Server");
     conn.write("Name: ACA");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 500);
   });  
 
   // updated to handle incoming data to console log for player
